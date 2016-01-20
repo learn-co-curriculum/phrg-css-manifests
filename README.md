@@ -1,23 +1,29 @@
-# Javascript Manifests
+# CSS Manifests
 
 ## Objectives
 
-1. Create Javascript Manifest Files
-2. Require Javascript Files in Manifests with Sprocket Directives
-3. Include Javascript Manifest Files in Layouts
+1. Create CSS Manifest Files
+2. Require CSS Files in Manifests with Sprocket Directives
+3. Include CSS Manifest Files in Layouts
 4. See a Manifest in Development vs Production
 
 ## Outline
 
 ### Manifest Files
 
-There are two things that make a JS file in app/assets a manifest file as opposed to actual JS code.
+There are two things that make a CSS file in app/assets a manifest file as opposed to actual CSS code.
 
-1. You load it into a main layout via javascript_include_tag
+1. You load it into a main layout via stylesheet_link_tag
 
-2. You use the magic "sprocket" directives that are valid JS comments that look like:
+2. You use the magic "sprocket" directives that are valid CSS comments that look like:
 
-//=
+```
+/*
+*= require 'main'
+*/
+```
+
+_Note_: In a CSS manifest file you must open the CSS comment block with `/*` and then each directive appears on an individual line starting with `*=`. You then close the block with `*/`. So it's a little different than the JS directive comments of `//=` which are individual valid JS comments.
 
 ### `require` directives
 
@@ -31,11 +37,11 @@ Remember that when you require something the path you provide must be the asset 
 
 ### Loading a Manifest File in your layout
 
-Nothing special here, when you say javascript_include_tag it will see if it's a manifest an act accordingly loading all the dependencies or it will simply create a script tag for the single JS file.
+Nothing special here, when you say stylesheet_link_tag it will see if it's a manifest an act accordingly loading all the dependencies or it will simply create a style link tag for the single CSS file.
 
-When you see javascript_include_tag application you think 1 file was loaded but actually many were.
+When you see stylesheet_link_tag application you think 1 file was loaded but actually many were.
 
-Show the student that there is a script tag for each file in the manifest.
+Show the student that there is a style link tag for each file in the manifest.
 
 Show how to debug manifest files that require files that can't be found.
 
