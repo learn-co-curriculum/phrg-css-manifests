@@ -7,8 +7,8 @@
 3. Include CSS Manifest Files in Layouts
 4. See a Manifest in Development vs Production
 
-## Outline
-CSS makes our web applications look good but can be hard to manage. As our application grow, so does the amount of styles we need. The Asset Pipeline can help us manage this chaos much like with JavaScript.
+## Overview
+CSS makes our web applications look good but can be hard to manage. As our application grow, so do the amount of stylesheets we need to manage. The Asset Pipeline can help us manage this chaos much like with JavaScript.
 
 ### Manifest Files
 
@@ -24,7 +24,7 @@ _Note_: In a CSS manifest file you must open the CSS comment block with `/*` and
 
 ### `require` directives
 
-When we require a CSS asset in our manifest, if it is located in one of the configured folders, it will be included in our application. One thing to remember is when you require something the path you provide must be the asset path. For example, if you have the file `app/assets/stylesheets/blogs/main.css` you will need to require it like this, `*= require 'bloges/main'`.
+When we require a CSS asset in our manifest, if it is located in one of the configured folders, it will be included in our application. One thing to remember is when you require something the path you provide must be the asset path. For example, if you have the file `app/assets/stylesheets/blogs/main.css` you will need to require it like this, `*= require 'blogs/main'`.
 
 ### Loading a Manifest File in your layout
 
@@ -44,7 +44,7 @@ In development mode, each CSS file will get it's own link tag. This allows for e
 */
 ```
 
-Would create this in our application layout's head tag:
+Would create this in our application layout's head tag: (assuming fingerprinting/digests are turned off)
 
 ```html
   <link rel="stylesheet" href="/assets/main.css" /> 
