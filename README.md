@@ -8,7 +8,7 @@
 4. See a Manifest in Development vs Production
 
 ## Overview
-CSS makes our web applications look good but can be hard to manage. As our application grow, so do the amount of stylesheets we need to manage. The Asset Pipeline can help us manage this chaos much like with JavaScript.
+CSS makes our web applications look good but can be hard to manage. As our application grows, so do the amount of stylesheets we need to manage. The Asset Pipeline can help us manage this chaos much like with JavaScript.
 
 ### Manifest Files
 
@@ -79,3 +79,5 @@ Notice the lack of whitespace? That's the minification we taked about earlier. T
 - http://guides.rubyonrails.org/asset_pipeline.html
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests' title='CSS Manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
