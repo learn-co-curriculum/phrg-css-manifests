@@ -16,7 +16,7 @@ Like our JavaScript manifest, the CSS manifest has a special syntax that differe
 
 ```
 /*
-*= require 'main'
+*= require main
 */
 ```
 
@@ -38,9 +38,9 @@ In development mode, each CSS file will get it's own link tag. This allows for e
 
 ```css
 /*
-*= require 'main'
-*= require 'blogs'
-*= require 'posts'
+*= require main
+*= require blogs
+*= require posts
 */
 ```
 
@@ -57,9 +57,9 @@ In production mode, Sprockets will take all of our CSS files and create one larg
 
 ```css
 /*
-*= require 'main'
-*= require 'blogs'
-*= require 'posts'
+*= require main
+*= require blogs
+*= require posts
 */
 ```
 
@@ -81,3 +81,5 @@ Notice the lack of whitespace? That's the minification we taked about earlier. T
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests' title='CSS Manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/css-manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
