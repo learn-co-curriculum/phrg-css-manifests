@@ -12,7 +12,7 @@ CSS makes our web applications look good but can be hard to manage. As our appli
 
 ### Manifest Files
 
-Like our JavaScript manifest, the CSS manifest has a special syntax that differentiates it from a regular CSS file. The `*= require` directive is very similiar to it's JS counterpart. We are just using a CSS comment instead of a JS comment.
+Like our JavaScript manifest, the CSS manifest has a special syntax that differentiates it from a regular CSS file. The `*= require` directive is very similar to it's JS counterpart. We are just using a CSS comment instead of a JS comment.
 
 ```
 /*
@@ -81,3 +81,5 @@ Notice the lack of whitespace? That's the minification we taked about earlier. T
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests' title='CSS Manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/css-manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
