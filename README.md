@@ -78,4 +78,4 @@ Notice the lack of whitespace? That's the minification we talked about earlier. 
 - https://github.com/rails/sprockets#sprockets-directives
 - http://guides.rubyonrails.org/asset_pipeline.html
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/css-manifests' title='CSS Manifests'>CSS Manifests</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>PHRG CSS Manifests</p>
